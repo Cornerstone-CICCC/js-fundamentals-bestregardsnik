@@ -9,5 +9,15 @@ If the above conditions are true, then print out:
 I'd like two scoops of __________ ice cream in a __________ with __________.
 Fill in the blanks with the flavor of the ice cream, vessel, and toppings. For example,
 
-I'd like two scoops of vanilla ice cream in a cone with peanuts. 
+I'd like two scoops of vanilla ice cream in a cone with peanuts.
 */
+
+const flavor = "chocolate";
+const vessel = "bowl";
+const toppings = "sprinkles";
+
+if ((flavor === "vanilla" || flavor === "chocolate") &&
+    (vessel === "cone" || vessel === "bowl") &&
+    (toppings === "sprinkles" || toppings === "peanuts")) {
+    console.log("I'd like two scoops of " + flavor + " ice cream in a " + vessel + " with " + toppings + ".");
+}
